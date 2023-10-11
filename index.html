@@ -2,35 +2,86 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8"/>
-        <title>Casey Nguyen</title>
         <!--viewport meta tag helps sites responsiveness-->
-        <meta name="viewport" content="width=device-width" />
-        <meta property="og:title" content="Machine Learning Workshop" />
-        <meta property="og:description" content="School for Machines Who Can't Learn Good and Want to Do Other Stuff Good Too" />
-        <meta property="og:image" content="http://www.machinelearningworkshop.com/image/all.png" />
-        <meta property="og:image:alt" content="Black and white line drawing of refrigerator, french door refrigerator, range, washer, fan, microwave, vaccuum, space heater and air conditioner" />
-        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial scale=1.0" />
+        <title>Casey Nguyen</title>    
+        <meta name="description" content="This website made by Casey Nguyen.">
+        <link rel="icon" href="https://i.pinimg.com/originals/20/2e/bd/202ebd6b0c57af59d12978260f494ff1.jpg">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
+
     <body>
-        <h1 style="color: #258dd2;">Casey Nguyen</h1>
-        <div>
-            <h2 >Profile</h2>
-            <ul>
-                <strong>Name: </strong> Casey Nguyen<br>
-                <strong>Email: </strong> uyen132004@gmail.com<br>
-                <strong>Phone Number: </strong> 0337659970 <br>
-            </ul>
-            <h2>Social media</h2>
-            <ul>
-                <strong>Facebook: </strong>
-                <a target="_blank" href="https://www.facebook.com/uyennhp31/#ref">Click here</a><br>
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="https://i.pinimg.com/originals/d4/c0/21/d4c021dbbe1d20702a0801e0125351dc.jpg  " alt="logo">
+                    </span>
 
-                <strong>Instagram: </strong>
-                <a target="_blank" href = "https://www.instagram.com/wyden_134/">Click here</a><br>
+                    <div class="text header-text">
+                        <span class="name">CodingLab</span>
+                        <span class="profression">Web developer</span>
+                    </div>
+                    
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
 
-                <strong>VSCO: </strong>
-                <a target="_blank" href= "https://vsco.co/uyen-nguyen13/gallery">Click here</a><br>
-            </ul>
-        </div>
+            <div class="menu-bar">
+                <div class = "menu">
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-home-alt icon'></i>
+                                <span class="text nav-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bxl-instagram icon'></i>
+                                <span class="text nav-text">Instagram</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bxl-github icon'></i>
+                                <span class="text nav-text">Github</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bxl-linkedin-square icon'></i>
+                                <span class="text nav-text">Linkedin</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bxl-blogger icon'></i>
+                                <span class="text nav-text">Blog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bottom-content">
+                    <li class="mode">
+                        <div class="moon-sun">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text">Dark Mode</span>
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li> 
+
+                </div>
+            </div>
+        </nav>
+        <script src="scripts.js"></script>
     </body>
 </html>
