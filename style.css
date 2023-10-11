@@ -59,6 +59,7 @@ body.dark{
 .sidebar .image {
     min-width: 60px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -72,6 +73,7 @@ body.dark{
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-03);
+    z-index: 100;
 }
 .sidebar.close{
     width: 88px;
@@ -119,16 +121,28 @@ header .image-text .header-text {
     position: absolute;
     top: 50%;
     right: -25px;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(180deg);
     height: 25px;
     width: 25px;
     background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 6px;
     color: var(--sidebar-color);
     font-size: 22px;
+}
+
+
+.sidebar.close header .toggle {
+    transform: translateY(-50%) rotateX(180deg);
+}
+body.dark .sidebar header .toggle {
+    transform: translateY(-50%) rotate(180deg);
+    color: var(--text-color);
+}
+body.dark .sidebar.close header .toggle {
+    transform: translateY(-50%) rotateX(180deg);
 }
 
 .sidebar li a {
@@ -145,11 +159,15 @@ header .image-text .header-text {
     background: var(--primary-color);
 }
 
-.sidebar li a:hover .icon,
-.sidebar li a:hover .text {
-    color: var(--sidebar-color);
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color);
 }
 
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color);
+}
 
 
 .sidebar li .icon {
@@ -165,7 +183,9 @@ header .image-text .header-text {
     color: var(--text-color);
     transition: var(--tran-03);
 }
-
+.menu {
+    margin-top: 30px;
+}
 .sidebar .menu-bar {
     height: calc(100% - 50px);
     display: flex;
@@ -226,7 +246,26 @@ header .image-text .header-text {
     background: var(--sidebar-color);
     transition: var(--tran-03);
 }
+
 body.dark .switch::before{
-    left: 25px;
+    left:24px;
+}
+.home{
+    position: relative;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% -250px);
+    transition: var(--tran-05);
+    background: var(--body-color);
+}
+.home .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding:8px 40px; 
+}
+.sidebar.close ~ .home{
+    left: 88px;
+    width: calc(100%-88px);
 }
 
