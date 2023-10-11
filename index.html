@@ -9,6 +9,7 @@
         <link rel="icon" href="https://i.pinimg.com/originals/20/2e/bd/202ebd6b0c57af59d12978260f494ff1.jpg">
         <!-- CSS -->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="text_effect.css">
         <!-- Boxicons CSS -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
@@ -35,7 +36,7 @@
                         <li class="nav-link">
                             <a href="#">
                                 <i class='bx bx-home-alt icon'></i>
-                                <span class="text nav-text">Home</span>
+                                <span class="text nav-text">Profile</span>
                             </a>
                         </li>
                         <li class="nav-link">
@@ -84,9 +85,26 @@
         </nav>
         <section class="home">
             <div class="text">
-                dsafjkjdsflka
+                <span class="auto-type">
+                    <br>
+                    <br>
+                    <br>
+                <h1>Hello everyone</h1><br>
+                <p style="font-size: 20px;margin-top: -20px;;">Thanks for stopping by my page</p><br>
+                <p>My name is Nguyen Hoang Phuong Uyen</p>
+                <p> I am currently a student of <span class="gradient-text">University of Information Technology</span></p>
+                <p>Click to the side-bar items for more</p></span>
             </div>
         </section>
         <script src="scripts.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".auto-type",{
+                strings: [],
+                typeSpeed:100,
+                backSpeed:100,
+                loop:true,
+            })
+        </script>
     </body>
 </html>
