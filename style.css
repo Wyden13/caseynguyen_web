@@ -378,7 +378,5 @@ body.dark .switch::before {
         opacity: 0;
     }
 
-    .sidebar li .text {
-        position: center;
-    }
+
 }
