@@ -252,7 +252,7 @@ body.dark .switch::before{
     left:24px;
 }
 .home{
-    position: relative;
+    position: absolute;
     left: 250px;
     height: 100vh;
     width: calc(100% -250px);
@@ -272,6 +272,35 @@ body.dark .switch::before{
 .home .gradient-text{
     background-image: linear-gradient(43deg,#4158d0,#c850c0,#ffcc70);
     -webkit-background-clip: text;
-    color:transparent;
-
+    color:transparent;  
 }
+
+/*======Intro section=====*/
+.home .profile-box .intro-text{
+    text-align: right;
+    padding:10px;
+    display:inline-block;
+    align-items:right;
+    float:left;
+    justify-content: right;
+    height:100%;
+    width:50%;
+    
+}
+.home .profile-box .intro-image{
+    text-align: left;
+    padding:10px;
+    margin-top: 20px;
+    display:inline-block;
+    align-items:left;
+    float:left;
+    justify-content: left;
+    height:100%;
+    width:50%;
+}
+
+.home .profile-box p{
+    font-size: 20px;
+    font-weight: 10px;
+}
+
