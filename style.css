@@ -287,32 +287,71 @@ body.dark .switch::before {
 }
 
 /*======Intro section=====*/
-.home .profile-box .intro-text {
+.home .profile-box .left-side {
     text-align: right;
     padding: 10px;
     display: inline-block;
     align-items: right;
     float: left;
     justify-content: right;
-    height: 100%;
+    height: auto;
     width: 50%;
 
 }
 
-.home .profile-box .intro-image {
+.home .profile-box .right-side {
     text-align: left;
     padding: 10px;
     margin-top: 20px;
     display: inline-block;
     align-items: left;
-    float: left;
+    float: right;
     justify-content: left;
-    height: 100%;
+    height: auto;
     width: 50%;
+}
+
+.home .profile-box .right-side img {
+    inline-size: 90%;
 }
 
 .home .profile-box p {
     padding: 10px;
     font-size: 20px;
     font-weight: 10px;
+}
+
+@media (max-width:600px) {
+    .home .profile-box .right-side {
+        margin-top: 20px;
+        padding: 10px;
+        display: inline-block;
+        float: right;
+        height: auto;
+        width: 100%;
+        left: 0;
+        position: relative;
+    }
+
+    .home .profile-box .right-side img {
+
+        width: 100%;
+    }
+
+    .home .profile-box .left-side {
+        text-align: left;
+        padding: 10px;
+        margin-top: 20px;
+        display: block;
+        align-items: left;
+        float: right;
+        justify-content: left;
+        height: auto;
+        width: 100%;
+    }
+
+    .home .text {
+        font-size: 25px;
+    }
+
 }
