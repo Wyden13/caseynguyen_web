@@ -354,4 +354,31 @@ body.dark .switch::before {
         font-size: 25px;
     }
 
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 10px 14px;
+        background: var(--sidebar-color);
+        transition: var(--tran-03);
+        z-index: 100;
+    }
+
+    .sidebar.close {
+        width: 0px;
+    }
+
+    .sidebar.close .icon {
+        opacity: 0;
+    }
+
+    .sidebar.close .image {
+        opacity: 0;
+    }
+
+    .sidebar li .text {
+        position: center;
+    }
 }
