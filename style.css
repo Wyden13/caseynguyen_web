@@ -386,8 +386,11 @@ body.dark .switch::before {
     }
     .sidebar.close~.home {
     left: 0;
-    
-}
+    }
+    .home{
+        height:100%;
+    }
+   
     .home .text{
         padding: 10px;
 
